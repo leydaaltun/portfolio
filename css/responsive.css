@@ -14,17 +14,57 @@
   ##Screen = B/w 767px
 */
 
-@media(max-width: 1050px){
+@media (max-width: 930px) {
+  .pp-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1050px){
     .header-nav {
         font-size: 30px;
     }
     .info-wrapper h1 {
      font-size: 35px;
     }
+    .info-wrapper h3 {
+      font-size: 22px;
+    }
+    .pp-wrapper {
+      width: 47%;
+      margin: auto;
+    }
+    .info-grid {
+      align-items: center;
+    }
+    .about ul li span {
+      font-size: 48px;
+    }
 }
 
-@media (max-width:600px) {
+@media only screen and (max-width:768px) {
   .header-nav {
     font-size: 21px;
+  }
+  .pp-wrapper {
+    width: 50%;
+  }
+  .info-grid {
+    align-items: center;
+  }
+  .info-wrapper h1 {
+    font-size: 35px;
+   }
+   .info-wrapper h3 {
+     font-size: 22px;
+   }
+   .about ul li span {
+    font-size: 30px;
+  }
+}
+
+@media(max-width: 482px) {
+  .about ul li span {
+    font-size: 23px;
   }
 }

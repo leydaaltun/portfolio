@@ -31,48 +31,35 @@
 
 </head>
 <body>
-   <!-- <div class="uk-width-1-1">
-       <div class="container">
-           <div class="video-wrapper">
-            <video autoplay muted  src="./video/pexels-kindel-media-7615706.mp4"></video>
-            <div class="text-wrapper">
-                <a href="page2.html">Click to enter</a>
-            </div>
-           </div>
-       </div>
-   </div> -->
    <div class="parallax header" data-parallax="scroll" data-z-index="-100" data-image-src="./images/bg.jfif">
         
         <div class="uk-width-1-1">
             <div class="uk-container uk-container-large">
-                <div class="uk-flex uk-flex-middle grid-top uk-grid header-nav" uk-grid>
-                    <div class="uk-width-1-3"><a href="">ABOUT</a></div>
-                    <div class="uk-width-1-3"><a href="">SKILLS</a></div>
-                    <div class="uk-width-1-3"><a href="">CONTACT</a></div>
+                <div class="uk-flex uk-flex-middle grid-top uk-grid header-nav uk-margin-top" uk-grid>
+                    <div class="uk-width-1-3"><a href="#about">ABOUT</a></div>
+                    <div class="uk-width-1-3"><a href="#projects">PROJECTS</a></div>
+                    <div class="uk-width-1-3"><a href="#contact">CONTACT</a></div>
                 </div>
             </div>
         </div>
         <div class="info uk-margin-large-top">
             <div class="uk-width-1-1">
                 <div class="uk-container">
-                    <div class="uk-flex" uk-grid>
-                        <div class="uk-width-1-2">
-                            <div class="pp-wrapper">
-                                <img src="./images/profile.png" alt="">
-                            </div>
-                        </div>
-                         <div class="uk-width-1-2 left-info">
+                    <div class="info-grid uk-flex uk-margin-large-top" uk-grid>
+                        <div class="left-info">
                             <div class="info-wrapper">
                              <h1>LEYDA ALTUN</h1>
                              <h3>Designer</h3>
                              <h3>Front-end Developer</h3>
-                             <p>Creative and Enthusiastic Based <br> in Turkey</p>
+                             <p>Creative and Enthusiastic <br> Based in Turkey</p>
                              <div class="btn-wrapper">
                                  <button class="uk-button uk-button-default">Say Hi</button>
                              </div>
                             </div>
                         </div>
-                        
+                        <div class="pp-wrapper">
+                            <img src="./images/profile.png" alt="">
+                        </div>
                         
                     </div>
                 </div>
@@ -80,8 +67,8 @@
         </div>      
    </div>
    
-   <div class="middle-wrapper uk-margin-large-top">
-    <div class="about-wrapper">
+   <div class="middle-wrapper uk-margin-large-top parallax3" data-parallax="scroll" naturalHeight="200" data-z-index="-100" data-image-src="./images/bg4.jfif">
+    <div class="about-wrapper" id="about">
         <div class="about uk-margin-medium-bottom">
             <div class="uk-width-1-1">
                 <div class="uk-container">
@@ -109,68 +96,106 @@
             </div>
         </div>
     </div>
-    <div class="works">
+    <div class="works" id="projects">
         <div class="uk-width-1-1">
             <div class="uk-container">
                 <h1>WORKS</h1>
             </div>
             <h3>Personal Design and Works</h3>
             <div class="uk-container-expand">
-                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                    <div class="uk-flex-last@s uk-card-media-right uk-cover-container" uk-grid> 
-                        <a href="" class="uk-position-right">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <img uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5" src="./images/image4.png" alt="" >
-                    </div>
-                    <div>
-                        <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5" class="uk-card-body">
-                            <h3 class="uk-card-title">To-Do List</h3>
-                            <ul>
-                                <li>HTML</li>
-                                <li>HTML</li>
-                                <li>HTML</li>
-                            </ul>
+                <div class="card-wrapper">
+                    <div class="uk-margin">
+                        <div class="card uk-flex-last@s uk-card-media-right uk-cover-container">
+                            <div class="right-card" uk-grid> 
+                                <a target="_blank" href="https://todolist-altunleyda.vercel.app/">
+                                <img src="./images/image4.png" alt="" >
+                                </a>
+                            </div>
+                            <div class="left-card">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title title">To-Do List</h3>
+                                    <ul class="list">
+                                        <li>HTML</li>
+                                        <li>HTML</li>
+                                        <li>HTML</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+                        
+                        
                     </div>
                 </div>
-                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                    <div class="uk-card-media-left uk-cover-container">
-                        <img uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5" src="./images/image5.png" alt="">
-                    </div>
-                    <div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title">Media Left</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <div class="card-wrapper">
+                    <div class="uk-margin">
+                        <div class="card uk-flex-last@s uk-card-media-right uk-cover-container">
+                            <div class="right-card" uk-grid> 
+                                <a target="_blank" href="https://allemails-git-master-altunleyda.vercel.app/">
+                                    <img src="./images/image5.png" alt="">
+                                </a>
+                            </div>
+                            <div class="left-card">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title title">All Emails</h3>
+                                    <ul class="list">
+                                        <li>HTML</li>
+                                        <li>HTML</li>
+                                        <li>HTML</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+                        
+                        
                     </div>
                 </div>
-                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-                        <img src="./images/image9.png" alt="" >
-                    </div>
-                    <div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title">To-Do List</h3>
-                            <ul>
-                                <li>HTML</li>
-                                <li>HTML</li>
-                                <li>HTML</li>
-                            </ul>
+                <div class="card-wrapper">
+                    <div class="uk-margin">
+                        <div class="card uk-flex-last@s uk-card-media-right uk-cover-container">
+                            <div class="right-card" uk-grid> 
+                                <a target="_blank" href="https://got-git-master.altunleyda.vercel.app/">
+                                    <img src="./images/image9.png" alt="" >
+                                </a>
+                            </div>
+                            <div class="left-card">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title title">To-Do List</h3>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>HTML</li>
+                                        <li>HTML</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+                        
+                        
                     </div>
                 </div>
-                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                    <div class="uk-card-media-left uk-cover-container">
-                        <img src="./images/image7.png" alt="">
-                    </div>
-                    <div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title">Media Left</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <div class="card-wrapper">
+                    <div class="uk-margin">
+                        <div class="card uk-flex-last@s uk-card-media-right uk-cover-container">
+                            <div class="right-card" uk-grid> 
+                                <a target="_blank" href="https://dogs.altunleyda.vercel.app/">
+                                    <img src="./images/image7.png" alt="">
+                                </a>
+                            </div>
+                            <div class="left-card">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title title">To-Do List</h3>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>HTML</li>
+                                        <li>HTML</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+                        
+                        
                     </div>
                 </div>
+               
             </div>
             <div class="uk-container uk-margin-large-top">
                 <h3>Projects I’ve worked on as front-end developer</h3>
@@ -297,23 +322,23 @@
         </div>
     </div>
    </div>
-    <footer class="uk-margin-large-top parallax" data-parallax="scroll" data-z-index="-100" data-image-src="">
-        <div uk-sticky>
-            <div class="uk-width-1-5">
-                <div class="social-icon-wrapper">
-                    
-                </div>
-            </div>
-        </div>
+   <div>
+    
+</div>
+    <footer id="contact" class="uk-margin-large-top parallax2" data-parallax="scroll" naturalHeight="200" data-z-index="-100" data-image-src="./images/bg3.jfif">
         <div class="footer-wrapper">
             <div class="uk-width-1-1">
                 <div class="uk-container">
                     <h1>LET'S GET IN TOUCH</h1>
-            <P>text</P>
-            <div class="btn-wrapper">
-                <button class="uk-button uk-button-default">Say Hi</button>
-            </div>
-            <div>made with <i class="far fa-heart"></i> by Leyda Altun</div>
+                    <P>text</P>
+                    <div class="social-icon-wrapper">
+                        <a href=""><i class="fab fa-google"></i></a>
+                        <a href=""><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="btn-wrapper">
+                    <button class="uk-button uk-button-default">Say Hi</button>
+                </div>
+                <div>made with <i class="fas fa-heart"></i> by Leyda Altun</div>
                 </div>
             </div>
         </div>
