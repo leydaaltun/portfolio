@@ -192,6 +192,8 @@ font-size: xx-large;
 .parallax {
     height: 100vh;
     background: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .parallax:before{
     position:fixed;
