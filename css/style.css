@@ -237,12 +237,24 @@ font-size: xx-large;
 .video-wrapper {
     position: relative;
     height: 100vh;
-
+    
 }
 video {
     position:absolute;
     top:0; 
-    
+    height: 100vh;
+    object-fit: fill;
+    width: 100%;
+}
+.video-wrapper .text-wrapper {
+    text-align: -webkit-center;
+}
+.video-wrapper .text-wrapper a {
+    color: #fff;
+    position: inherit;
+}
+.video-wrapper .text-wrapper a:hover {
+    text-decoration: none;
 }
 .about-wrapper {
     
@@ -345,4 +357,14 @@ footer {
 .pp-wrapper,
 .left-info {
     margin: auto;
+}
+.card-wrapper img {
+    border-radius: 20px;
+}
+.uk-slider-items img {
+    width: 100%;
+}
+.uk-slider,
+.slider-title {
+    margin: 40px;
 }

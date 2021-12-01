@@ -67,4 +67,7 @@
   .about ul li span {
     font-size: 23px;
   }
+  .slider-title {
+    font-size: 25px !important;
+  }
 }

@@ -32,7 +32,7 @@ listItems.forEach(item=>{
     observer.observe(item)
 })
 
-$(document).ready(function(){
+
 
 //CARD ANIMATION
 let cardWrapper = [...document.querySelectorAll('.card-wrapper')]
@@ -40,14 +40,18 @@ let cardWrapper = [...document.querySelectorAll('.card-wrapper')]
 
 var controller = new ScrollMagic.Controller()
 
+
+var width = window.innerWidth,
+    height = window.innerHeight;
+
 $('.card').each(function(){
     
-    console.log(this)
+
     
 
     var tlFirstScroll = new TimelineMax()
     tlFirstScroll
-    .set('.card-wrapper', {scale:2, transformOrigin:'center top'})
+    .set('.card-wrapper', {scale:0.7, transformOrigin:'center'})
     .to('.card-wrapper', 2,{scale:1, y:'-50'})
     .to('.card-wrapper', 2, {scale: 1, y:'0%'})
 
@@ -56,9 +60,10 @@ $('.card').each(function(){
      //Scene 1
 
     var scene1 = new ScrollMagic.Scene({
+      offset: 100,
       triggerElement: this,
       triggerHook: 0,
-      duration: '80%'
+      duration: '100%'
     })
     
     .setTween(tlFirstScroll)
@@ -100,4 +105,4 @@ var scene = new ScrollMagic.Scene({
 })
 
 
-})
+
