@@ -206,7 +206,10 @@ font-size: xx-large;
 ::-webkit-scrollbar {
     display: none;
 }
-
+.parallax3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .info-wrapper h1,
 .info-wrapper h3,
 .info-wrapper p {
@@ -334,6 +337,8 @@ video {
 }
 .parallax2 {
     height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 footer {
     display: flex;
