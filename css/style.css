@@ -377,3 +377,12 @@ footer {
 .card-wrapper .left-card p {
     font-family: sans-serif;
 }
+
+.left-card ul {
+    display: flex;
+}
+.left-card .uk-card-body {
+    height: inherit;
+    display: grid;
+    align-content: center;
+}

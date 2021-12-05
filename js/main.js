@@ -95,11 +95,12 @@ animateIn
 //Make a scrollMagic scene
 
 var scene = new ScrollMagic.Scene({
+    offset: 150,
     triggerHook: 0.25,
     triggerElement: this,
     duration: '0%'
 })
-//.addIndicators({name: 'card'})
+.addIndicators({name: 'card'})
 .setTween(animateIn).addTo(controller)
 
 })
