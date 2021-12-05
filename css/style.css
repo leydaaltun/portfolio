@@ -386,3 +386,6 @@ footer {
     display: grid;
     align-content: center;
 }
+.card-wrapper .card {
+    height: 70vh;
+}
