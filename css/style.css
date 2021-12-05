@@ -321,7 +321,7 @@ video {
     top: 0;
     background: #aba2d273;
     width: -webkit-fill-available;
-    height: -webkit-fill-available;
+    height: auto;
     text-align: center;
     border-radius: 20px;
     color: #fff;
