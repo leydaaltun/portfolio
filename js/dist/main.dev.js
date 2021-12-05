@@ -87,7 +87,6 @@ $(".card-wrapper").each(function () {
     triggerHook: 0.25,
     triggerElement: this,
     duration: '0%'
-  }).addIndicators({
-    name: 'card'
-  }).setTween(animateIn).addTo(controller);
+  }) //.addIndicators({name: 'card'})
+  .setTween(animateIn).addTo(controller);
 });

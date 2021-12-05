@@ -100,7 +100,7 @@ var scene = new ScrollMagic.Scene({
     triggerElement: this,
     duration: '0%'
 })
-.addIndicators({name: 'card'})
+//.addIndicators({name: 'card'})
 .setTween(animateIn).addTo(controller)
 
 })
