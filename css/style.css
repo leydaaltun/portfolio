@@ -41,7 +41,7 @@ h3{
 .info .left-info {
     padding-left: 0;
 }
-.info .info-wrapper .btn-wrapper button {
+.info .info-wrapper .btn-wrapper a {
     padding: 15px;
     /* border: 1px solid #683f89; */
     color: #683f89;
@@ -50,6 +50,9 @@ h3{
     background: #fff;
     font-weight: 600;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.info .info-wrapper .btn-wrapper a:active {
+    font-size: 30px;
 }
 .info-wrapper h1 {
     font-size: 48px;
